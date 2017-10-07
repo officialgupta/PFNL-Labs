@@ -5,7 +5,7 @@ list1 = ['how', 'why', 'however', 'where', 'never']
 
 #Ex1a
 def match(pattern):
-    return re.match("[0-1][0-1][0-1]+[a-z]*[A-Z]*", pattern)
+    return re.match("[0-1][0-1][0-1]+([a-z]*[A-Z]*[0|1]*)*", pattern)
     
 if(match("111dsadas")!="None"):
     print("True")
